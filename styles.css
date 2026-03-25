@@ -577,3 +577,40 @@ h2 {
 .rsvp-note i {
   margin-right: 5px;
 }
+/* --- Ajustes móviles --- */
+@media (max-width: 520px){
+
+  /* Que los botones no se partan y se vean bien en móvil */
+  #rsvp .cta{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #rsvp .btn{
+    width: min(92vw, 360px);
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #rsvp .btn.primary{
+    white-space: nowrap;     /* evita salto de línea */
+    font-size: 1rem;         /* ajusta tamaño */
+    padding: 14px 16px;      /* un poco más compacto */
+  }
+
+  /* Si usas iconos dentro del botón */
+  #rsvp .btn i{
+    font-size: 1.05rem;
+    flex: 0 0 auto;
+  }
+}
+
+/* Para pantallas MUY pequeñas */
+@media (max-width: 360px){
+  #rsvp .btn.primary{
+    font-size: .95rem;
+    padding: 12px 14px;
+  }
+}
