@@ -545,3 +545,35 @@ h2 {
     height: 30px;
   }
 }
+/* ==================== RSVP SOLO FORMULARIO ==================== */
+#rsvp .cta {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-form {
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  min-width: 280px;
+  background: linear-gradient(135deg, var(--purple) 0%, var(--purple2) 100%);
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(142, 122, 181, 0.4);
+}
+
+.btn-form:hover {
+  background: linear-gradient(135deg, var(--purple2) 0%, var(--purple) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(142, 122, 181, 0.5);
+}
+
+.rsvp-note {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--purple);
+  opacity: 0.8;
+}
+
+.rsvp-note i {
+  margin-right: 5px;
+}
